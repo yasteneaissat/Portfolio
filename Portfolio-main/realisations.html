@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Réalisations</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .project-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: rgba(43,108,176,0.12);
+      color: var(--accent);
+      border: 1px solid rgba(43,108,176,0.25);
+      border-radius: 6px;
+      padding: 0.2rem 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .project-date {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin: 0.6rem 0;
+    }
+    .project-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      background: rgba(11,37,69,0.06);
+      color: var(--navy);
+      border-radius: 6px;
+      padding: 0.2rem 0.45rem;
+    }
+    .project-quote {
+      border-left: 3px solid var(--accent);
+      padding: 0.4rem 0.7rem;
+      font-style: italic;
+      font-size: 0.85rem;
+      color: #2b3b4a;
+      margin: 0.6rem 0;
+      background: rgba(43,108,176,0.04);
+      border-radius: 0 6px 6px 0;
+    }
+    .project-num {
+      position: absolute;
+      top: 0.6rem;
+      right: 0.8rem;
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: rgba(11,37,69,0.06);
+      line-height: 1;
+      pointer-events: none;
+    }
+    .project {
+      position: relative;
+      overflow: hidden;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    @media(max-width:900px){.projects{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.projects{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <nav class="navbar" role="navigation">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">YA</div>
+        <div><div style="font-size:0.95rem">Yastene AISSAT</div><div style="font-size:0.75rem;color:rgba(255,255,255,0.85)">Portfolio</div></div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="entreprise.html">Entreprise</a>
+        <a href="realisations.html" class="active">Réalisation</a>
+        <a href="veille.html">Veille</a>
+        <a href="bilan.html">Bilan</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:96px">
+    <div class="section">
+      <h2>Réalisations — Vue d'ensemble</h2>
+      <div class="card" style="margin-top:0.6rem">
+        <p>Projets personnels réalisés durant ma formation BTS SIO SLAM, couvrant le développement web full-stack, mobile, IA & data, et e-commerce.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Projets sélectionnés</h2>
+      <div class="projects" style="margin-top:0.6rem">
+
+        <!-- Projet 1 — Sentiment Analyzer -->
+        <article class="project card">
+          <span class="project-num">01</span>
+          <div class="project-badge">IA & Full-Stack</div>
+          <div class="project-date">📅 15/02/2026 Au 20/03/2026</div>
+          <h3>Sentiment Analyzer</h3>
+          <p style="font-size:0.88rem;color:#34495e;margin:0.4rem 0">Application d'analyse de sentiment en temps réel utilisant le NLP. Chaque texte soumis est classifié comme positif, négatif ou neutre grâce à un modèle Hugging Face déployé via FastAPI.</p>
+          <div class="project-tags">
+            <span class="project-tag">FastAPI (Python)</span>
+            <span class="project-tag">Vue.js 3</span>
+            <span class="project-tag">Tailwind CSS</span>
+            <span class="project-tag">Hugging Face API</span>
+            <span class="project-tag">Docker</span>
+            <span class="project-tag">Docker Compose</span>
+            <span class="project-tag">NLP</span>
+          </div>
+          <div class="project-quote">Architecture conteneurisée Docker avec gestion sécurisée des secrets — prête pour la production.</div>
+          <button class="voir-plus" onclick="openPopup('popup-sentiment')">👀 Voir plus</button>
+
+          <div id="popup-sentiment" class="popup" aria-hidden="true">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup-sentiment')">&times;</span>
+              <h3>Sentiment Analyzer — Aperçu complet</h3>
+              <div class="project-badge">IA & Full-Stack</div>
+              <p style="margin-top:0.6rem">Application d'analyse de sentiment en temps réel utilisant le NLP.</p>
+              <p style="margin-top:0.6rem;font-weight:600">📅 15/02/2026 Au 20/03/2026</p>
+              <p style="margin-top:0.6rem;font-weight:600">Rôle : Développement complet (backend IA + frontend)</p>
+              <p style="margin-top:0.6rem;font-weight:600">Projet individuel</p>
+              <div class="popup-section">
+                <h4>🔑 Points clés</h4>
+                <ul style="text-align:left;margin-top:0.5rem;line-height:1.8;font-size:0.9rem">
+                  <li>→ Analyse NLP en temps réel (Positif / Négatif / Neutre)</li>
+                  <li>→ Pipeline Hugging Face Inference API</li>
+                  <li>→ Variables d'environnement sécurisées</li>
+                  <li>→ Architecture microservices conteneurisée</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 2 — Revision App -->
+        <article class="project card">
+          <span class="project-num">02</span>
+          <div class="project-badge">IA & Mobile</div>
+          <div class="project-date">📅 20/03/2026 Au 31/03/2026</div>
+          <h3>Revision App</h3>
+          <p style="font-size:0.88rem;color:#34495e;margin:0.4rem 0">Application mobile qui génère automatiquement des fiches de révision pédagogiques à partir d'une photo de cours. Le pipeline combine OCR, LLM et export PDF.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">Celery / Redis</span>
+            <span class="project-tag">OpenCV</span>
+            <span class="project-tag">Google Cloud Vision</span>
+            <span class="project-tag">GPT-4o</span>
+            <span class="project-tag">Claude 3.5</span>
+          </div>
+          <div class="project-quote">Pipeline IA complet : image → OCR → LLM → fiche Markdown → export PDF.</div>
+          <button class="voir-plus" onclick="openPopup('popup-revision')">👀 Voir plus</button>
+
+          <div id="popup-revision" class="popup" aria-hidden="true">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup-revision')">&times;</span>
+              <h3>Revision App — Aperçu complet</h3>
+              <div class="project-badge">IA & Mobile</div>
+              <p style="margin-top:0.6rem">Génération automatique de fiches de révision par photo de cours.</p>
+              <p style="margin-top:0.6rem;font-weight:600">📅 20/03/2026 Au 31/03/2026</p>
+              <p style="margin-top:0.6rem;font-weight:600">Rôle : Développement complet (mobile + backend IA)</p>
+              <p style="margin-top:0.6rem;font-weight:600">Projet individuel</p>
+              <div class="popup-section">
+                <h4>🔑 Pipeline IA</h4>
+                <p style="font-size:0.9rem;margin-top:0.4rem">Image prise en photo → OCR (Google Cloud Vision / OpenCV) → LLM (GPT-4o / Claude 3.5) → Fiche Markdown → Export PDF</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 3 — Gestion de Ressources Techniques -->
+        <article class="project card">
+          <span class="project-num">03</span>
+          <div class="project-badge">Full-Stack Web</div>
+          <div class="project-date">📅 10/10/2025 au 12/11/2025</div>
+          <h3>Gestion de Ressources Techniques</h3>
+          <p style="font-size:0.88rem;color:#34495e;margin:0.4rem 0">Application de gestion d'inventaire d'équipements avec CRUD complet, filtrage dynamique et interface responsive. Intègre tests unitaires et documentation technique.</p>
+          <div class="project-tags">
+            <span class="project-tag">Vue.js</span>
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">Git</span>
+            <span class="project-tag">Tests Unitaires</span>
+          </div>
+          <div class="project-quote">Développement pro : versionnage Git, tests unitaires, documentation technique complète.</div>
+          <button class="voir-plus" onclick="openPopup('popup-gestion')">👀 Voir plus</button>
+
+          <div id="popup-gestion" class="popup" aria-hidden="true">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup-gestion')">&times;</span>
+              <h3>Gestion de Ressources Techniques — Aperçu complet</h3>
+              <div class="project-badge">Full-Stack Web</div>
+              <p style="margin-top:0.6rem">Application de gestion d'inventaire avec CRUD complet et interface responsive.</p>
+              <p style="margin-top:0.6rem;font-weight:600">📅 10/10/2025 au 12/11/2025</p>
+              <p style="margin-top:0.6rem;font-weight:600">Rôle : Développement full-stack</p>
+              <p style="margin-top:0.6rem;font-weight:600">Compétences : Vue.js, PHP, MySQL, Git, Tests unitaires</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 4 — Data Viz -->
+        <article class="project card">
+          <span class="project-num">04</span>
+          <div class="project-badge">Data & Visualisation</div>
+          <div class="project-date">📅 Mars 2025 — Avril 2025</div>
+          <h3>Dashboard Data Viz</h3>
+          <p style="font-size:0.88rem;color:#34495e;margin:0.4rem 0">Dashboard interactif de visualisation de données avec graphiques dynamiques, filtres temps réel et export CSV. Exploite des jeux de données ouverts pour produire des insights visuels clairs.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">Chart.js</span>
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">Vue.js</span>
+          </div>
+          <div class="project-quote">Pipeline data : ingestion CSV → traitement Pandas → API → graphiques interactifs.</div>
+          <button class="voir-plus" onclick="openPopup('popup-dataviz')">👀 Voir plus</button>
+
+          <div id="popup-dataviz" class="popup" aria-hidden="true">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup-dataviz')">&times;</span>
+              <h3>Dashboard Data Viz — Aperçu complet</h3>
+              <div class="project-badge">Data & Visualisation</div>
+              <p style="margin-top:0.6rem">Dashboard interactif de visualisation de données avec graphiques dynamiques.</p>
+              <p style="margin-top:0.6rem;font-weight:600">📅 Mars 2025 — Avril 2025</p>
+              <p style="margin-top:0.6rem;font-weight:600">Rôle : Développement complet (data pipeline + frontend)</p>
+              <p style="margin-top:0.6rem;font-weight:600">Projet individuel</p>
+              <div class="popup-section">
+                <h4>🔑 Fonctionnalités</h4>
+                <ul style="text-align:left;margin-top:0.5rem;line-height:1.8;font-size:0.9rem">
+                  <li>→ Graphiques interactifs (barres, lignes, camembert)</li>
+                  <li>→ Filtres dynamiques par période / catégorie</li>
+                  <li>→ Export des données en CSV</li>
+                  <li>→ API FastAPI pour servir les données</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 5 — SmartBike -->
+        <article class="project card">
+          <span class="project-num">05</span>
+          <div class="project-badge">E-Commerce</div>
+          <div class="project-date">📅 15/03/2025 au 10/04/2025</div>
+          <h3>SmartBike — E-commerce</h3>
+          <p style="font-size:0.88rem;color:#34495e;margin:0.4rem 0">Site e-commerce responsive de vente de vélos. Interface dynamique avec validation JavaScript côté front, architecture PHP et base de données relationnelle MySQL côté back.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML5 / CSS3</span>
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">MySQL</span>
+          </div>
+          <div class="project-quote">Dynamisation d'interface JS + architecture MVC PHP.</div>
+          <button class="voir-plus" onclick="openPopup('popup-smartbike')">👀 Voir plus</button>
+
+          <div id="popup-smartbike" class="popup" aria-hidden="true">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup-smartbike')">&times;</span>
+              <h3>SmartBike — Aperçu complet</h3>
+              <div class="project-badge">E-Commerce</div>
+              <p style="margin-top:0.6rem">Plateforme e-commerce pour la vente de vélos et accessoires.</p>
+              <p style="margin-top:0.6rem;font-weight:600">📅 15/03/2025 au 10/04/2025</p>
+              <p style="margin-top:0.6rem;font-weight:600">Rôle : Développement back-end et intégration</p>
+              <p style="margin-top:0.6rem;font-weight:600">Compétences : PHP, SQL, HTML, CSS</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projet 6 — Jeu Snake Mobile -->
+        <article class="project card">
+          <span class="project-num">06</span>
+          <div class="project-badge">Mobile — Game Dev</div>
+          <div class="project-date">📅 01/11/2025 Au 09/02/2025</div>
+          <h3>Jeu Snake Mobile</h3>
+          <p style="font-size:0.88rem;color:#34495e;margin:0.4rem 0">Jeu d'arcade Snake développé en Flutter/Dart. Gestion des états de jeu, logique de mouvement fluide et optimisation des performances graphiques pour mobile.</p>
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Dart</span>
+            <span class="project-tag">Android Studio</span>
+          </div>
+          <div class="project-quote">Gestion d'états, logique temps réel et rendu graphique optimisé mobile.</div>
+          <button class="voir-plus" onclick="openPopup('popup-snake')">👀 Voir plus</button>
+
+          <div id="popup-snake" class="popup" aria-hidden="true">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup-snake')">&times;</span>
+              <h3>Jeu Snake Mobile — Aperçu complet</h3>
+              <div class="project-badge">Mobile — Game Dev</div>
+              <p style="margin-top:0.6rem">Jeu Snake mobile développé en Flutter/Dart.</p>
+              <p style="margin-top:0.6rem;font-weight:600">📅 Mai 2025 — Juin 2025</p>
+              <p style="margin-top:0.6rem;font-weight:600">Rôle : Développement complet — projet individuel</p>
+              <p style="margin-top:0.6rem;font-weight:600">Durée : 3 semaines</p>
+              <p style="margin-top:0.6rem;font-weight:600">Compétences : Flutter, Dart, Android Studio</p>
+              <div class="popup-section">
+
+                </div>
+              </div>
+              <div class="popup-section">
+                
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="year3"></span> — Réalisations
+    </div>
+  </main>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+  <script>
+    function openPopup(id){
+      const p = document.getElementById(id);
+      if(!p) return;
+      p.classList.add('show');
+      p.setAttribute('aria-hidden','false');
+      document.body.classList.add('no-scroll');
+    }
+    function closePopup(id){
+      const p = document.getElementById(id);
+      if(!p) return;
+      p.classList.remove('show');
+      p.setAttribute('aria-hidden','true');
+      setTimeout(()=>{
+        if(!document.querySelector('.popup.show')) document.body.classList.remove('no-scroll');
+      },200);
+    }
+    window.addEventListener('click', function(e){
+      if(e.target.classList.contains('popup')){
+        e.target.classList.remove('show');
+        e.target.setAttribute('aria-hidden','true');
+        if(!document.querySelector('.popup.show')) document.body.classList.remove('no-scroll');
+      }
+    });
+    window.addEventListener('keydown', function(e){
+      if(e.key==='Escape'){
+        document.querySelectorAll('.popup.show').forEach(p=>{
+          p.classList.remove('show');
+          p.setAttribute('aria-hidden','true');
+        });
+        document.body.classList.remove('no-scroll');
+      }
+    });
+  </script>
+</body>
+</html>

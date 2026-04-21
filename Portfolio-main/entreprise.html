@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Entreprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar" role="navigation">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">YA</div>
+        <div>
+          <div style="font-size:0.95rem">Yastene AISSAT</div>
+          <div style="font-size:0.75rem;color:rgba(255,255,255,0.85)">Portfolio</div>
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="entreprise.html" class="active">Entreprise</a>
+        <a href="realisations.html">Réalisation</a>
+        <a href="veille.html">Veille</a>
+        <a href="bilan.html">Bilan</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:96px;">
+    <div class="section">
+      <h2>Présentation de l'entreprise</h2>
+      <div class="card" style="margin-top:0.6rem">
+        <p><strong>Nom :</strong> SARL Fly Chemicals </p>
+        <p><strong>Secteur :</strong> Production industrielle de produits chimiques (agroalimentaire, textile, pharmacie) </p>
+        <p><strong>Description succincte :</strong> Entreprise en pleine mutation stratégique passant d'importateur à producteur de solutions chimiques techniques.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Le Système d'Information (SI)</h2>
+      <div class="card" style="margin-top:0.6rem">
+        <p>Environnement technique de développement :</p>
+        <ul style="margin-top:0.6rem;line-height:1.6">
+          <li><strong>Serveurs de test :</strong> Localhost via XAMPP / WAMP </li>
+          <li><strong>Langages :</strong> HTML5, CSS3, JavaScript pour le Front-end </li>
+          <li><strong>Back-end :</strong> PHP (Architecture modulaire avec include) </li>
+          <li><strong>Base de données :</strong> MySQL gérée via phpMyAdmin </li>
+          <li><strong>Sécurité :</strong> Interface PDO pour la protection contre les injections SQL </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Ma place dans le SI & missions</h2>
+      <div class="grid-2" style="margin-top:0.6rem">
+        <div class="card">
+          <h3>Ma place</h3>
+          <p>Stagiaire Développeur Web au sein du Pôle Digital & IT, rattaché à la gérance de Béjaïa.</p>
+
+          <h3 style="margin-top:0.8rem">Missions principales</h3>
+          <ul style="margin-top:0.6rem;line-height:1.6">
+            <li>Modernisation intégrale du patrimoine numérique de l'entreprise </li>
+            <li>Conception de deux variantes de design (Responsive Design) </li>
+            <li>Structuration dynamique du catalogue de produits complexes en PHP/SQL </li>
+            <li>Mise en place d'un formulaire de contact sécurisé avec stockage en base de données</li>
+          </ul>
+        </div>
+
+        <aside class="card">
+          <h3>Outils utilisés</h3>
+          <div style="margin-top:0.6rem">
+            <p><strong>Logiciels de développement :</strong></p>
+            <ul style="line-height:1.6">
+              <li>Visual Studio Code </li>
+              <li>Chrome DevTools (Débogage et tests mobiles) </li>
+              <li>MySQL & PDO </li>
+              <li>Logiciels de simulation serveur (Apache/MySQL) </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+
+        <div style="padding: 1rem; text-align: center;">
+          <a href="rapport de stage.pdf" download style="text-decoration: none; color: white; background: #0056b3; padding: 10px 20px; border-radius: 4px; display: inline-block;">
+            Télécharger le rapport (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="year2"></span> — Entreprise & missions (SARL Fly Chemicals)
+    </div>
+  </main>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+  
+</body>
+</html>

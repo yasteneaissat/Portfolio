@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">YA</div>
+        <div>
+          <div style="font-size:0.95rem">Yastene AISSAT</div>
+          <div style="font-size:0.75rem;color:rgba(255,255,255,0.85)">Portfolio</div>
+        </div>
+      </div>
+
+      <div class="nav-links" role="menubar">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="entreprise.html">Entreprise</a>
+        <a href="realisations.html">Réalisation</a>
+        <a href="veille.html">Veille</a>
+        <a href="bilan.html">Bilan</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="hero container">
+    <div class="hero-card">
+      <div class="avatar">YA</div>
+      <div class="hero-info">
+        <h1>Yastene AISSAT — Étudiant BTS SIO</h1>
+        <p class="lead">etudiant bts sio  </p>
+
+        <div class="chips" aria-hidden="true">
+          <span class="chip">Data & IA</span>
+          <span class="chip">Développement web</span>
+          <span class="chip">Développement mobile</span>
+        </div>
+
+        <div style="margin-top:0.9rem;font-size:0.95rem;color:#123045">
+          <p> Étudiant en BTS SIO, passionné par les technologies du numérique. Je possède des compétences en administration système Linux, développement web (HTML, CSS, JavaScript) et programmation (Python, C, Java, Flutter). Curieux, autonome et rigoureux, je m’investis pleinement dans chaque projet pour proposer des solutions efficaces et innovantes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section container" style="margin-top:1.1rem">
+      <h2>Compétences techniques & humaines</h2>
+      <div style="margin-top:0.6rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem" class="skills-grid">
+
+        <div class="card">
+          <h3 style="margin-bottom:0.7rem;color:var(--navy);font-size:0.95rem">🖥️ Frontend</h3>
+          <div class="kv">
+            <div class="item">Vue.js 3</div>
+            <div class="item">HTML5</div>
+            <div class="item">CSS3</div>
+            <div class="item">JavaScript</div>
+            <div class="item">React.js</div>
+            <div class="item">Next.js</div>
+            <div class="item">Tailwind CSS</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom:0.7rem;color:var(--navy);font-size:0.95rem">⚙️ Backend</h3>
+          <div class="kv">
+            <div class="item">PHP / Symfony</div>
+            <div class="item">FastAPI</div>
+            <div class="item">Python</div>
+            <div class="item">Django (notions)</div>
+            <div class="item">SQL / MySQL</div>
+            <div class="item">API REST</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom:0.7rem;color:var(--navy);font-size:0.95rem">🛠️ Outils</h3>
+          <div class="kv">
+            <div class="item">Git</div>
+            <div class="item">Docker</div>
+            <div class="item">phpMyAdmin</div>
+            <div class="item">WordPress</div>
+            <div class="item">Celery / Redis</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom:0.7rem;color:var(--navy);font-size:0.95rem">📱 Mobile</h3>
+          <div class="kv">
+            <div class="item">Flutter</div>
+            <div class="item">Dart</div>
+            <div class="item">Android Studio</div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin-bottom:0.7rem;color:var(--navy);font-size:0.95rem">🌍 Langues</h3>
+          <div class="info-list">
+            <div class="info-item"><span>Français</span><strong>Langue scolaire</strong></div>
+            <div class="info-item"><span>Anglais</span><strong>B2 — Professionnel</strong></div>
+            <div class="info-item"><span>Arabe</span><strong>C2 — Courant</strong></div>
+            <div class="info-item"><span>Kabyle / Tamazight</span><strong>Maternelle</strong></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card" style="margin-top:1rem">
+        <h3>Compétences humaines</h3>
+        <div style="margin-top:0.6rem" class="kv">
+          <div class="item">Communication</div>
+          <div class="item">Travail en équipe</div>
+          <div class="item">Autonomie</div>
+          <div class="item">Gestion du temps</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section container">
+      <h2>Résumé rapide</h2>
+      <div class="card" style="margin-top:0.6rem">
+        <p>je prepare un bts sio - ce site est un resumer de mes competances    :) </p>
+        
+      </div>
+    </div>
+
+    <div class="footer container">
+      © <span id="year"></span> Yastene AISSAT — Portfolio E5
+    </div>
+  </main>
+  
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

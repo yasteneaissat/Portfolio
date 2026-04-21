@@ -1,0 +1,83 @@
+<!--outil pour la veille-->
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Veille</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">YA</div>
+        <div><div style="font-size:0.95rem">Yastene AISSAT</div><div style="font-size:0.75rem;color:rgba(255,255,255,0.85)">BTS SIO</div></div>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="entreprise.html">Entreprise</a>
+        <a href="realisations.html">Réalisation</a>
+        <a href="veille.html" class="active">Veille</a>
+        <a href="bilan.html">Bilan</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:96px">
+    <div class="section">
+      <h2>Thème de la veille</h2>
+      <div class="card" style="margin-top:0.6rem">
+        <p><strong>Thème :</strong> l'impact de l'ia sur le recrutement au travail</p>
+        <p><strong>Justification :</strong> l'ia peux etre un bon moyen pour faciliter la recherche d'emploi/recrutement</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Articles sélectionnés</h2>
+      <div style="margin-top:0.6rem;display:flex;flex-direction:column;gap:0.8rem">
+        <article class="article card">
+          <div class="meta">
+            <div>27 octobre 2025</div>
+            <div>Source: Anthony Morel surRMC</div>
+            <div>Note: 4/5</div>
+          </div>
+          <div class="content">
+            <h4>“Popole Emploi”, “LazyApply”… Ces applis dopées à l’IA qui aident à trouver du travail</h4>
+            <p>De plus en plus de candidats utilisent l’intelligence artificielle pour rédiger leurs CV, postuler automatiquement ou même s’entraîner à un entretien d’embauche. Une révolution qui bouscule la recherche d’emploi.</p>
+            <p><a href="https://rmc.bfmtv.com/actualites/tech/popole-emploi-lazy-apply-ces-applis-dopees-a-l-ia-qui-aident-a-trouver-du-travail_AV-202510270667.html" style="color:var(--accent);text-decoration:none">Lire l'article</a></p>
+          </div>
+        </article>
+
+        <article class="article card">
+          <div class="meta">
+            <div>28 octobre 2025</div>
+            <div>Source: Guilhem Pouiol sur Capital</div>
+            <div>Note: 5/5</div>
+          </div>
+          <div class="content">
+            <h4>est-ce vraiment une bonne idée d’utiliser l’IA pour créer votre CV ?</h4>
+            <p>L'intelligence artificielle est devenue l'outil incontournable pour rédiger un CV parfait, éliminant fautes et formulations maladroites. Mais face à l'uniformisation des candidatures, comment faire la différence ?</p>
+            <p><a href="https://www.capital.fr/votre-carriere/recrutement-est-ce-vraiment-une-bonne-idee-dutiliser-lia-pour-creer-votre-cv-1520152" style="color:var(--accent);text-decoration:none">Lire l'article</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Mode de diffusion</h2>
+      <div class="card" style="margin-top:0.6rem">
+        <p>Je diffuse ma veille via mon protfolio en ligne je compte aussi en faire un flux RSS</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="year4"></span> — Veille
+    </div>
+  </main>
+
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>

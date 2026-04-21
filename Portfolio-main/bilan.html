@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Bilan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">YA</div>
+        <div><div style="font-size:0.95rem">Yastene AISSAT</div><div style="font-size:0.75rem;color:rgba(255,255,255,0.85)">BTS SIO</div></div>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="entreprise.html">Entreprise</a>
+        <a href="realisations.html">Réalisation</a>
+        <a href="veille.html">Veille</a>
+        <a href="bilan.html" class="active">Bilan</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top:96px">
+    <div class="section">
+      <h2>Retour sur les 2 ans</h2>
+      <div class="card" style="margin-top:0.6rem">
+        <p><strong>Ce que j'ai appris :</strong> Meilleure compréhension des systèmes Linux, gestion de projet, developement web et mobile, et travail en équipe.</p>
+
+        <p style="margin-top:0.6rem"><strong>Ce que j'ai aimé :</strong> La résolution de problèmes concrets, l'automatisation, l'apprentissage d'outil informatique en general</p>
+
+        <p style="margin-top:0.6rem"><strong>Ce que j'ai moins aimé :</strong> La documentation insuffisante sur certains services internes, travail parfois redondant.</p>
+
+        <p style="margin-top:0.6rem"><strong>Que ferais-je différemment ?</strong> Mettre plus d'accent sur les tests et la documentation continues, automatiser davantage les tâches récurrentes.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Projet professionnel</h2>
+      <div class="card" style="margin-top:0.6rem">
+        <p>Objectif à court terme : approfondir la sécurité des systèmes et passer une certification (ex : LPIC, CompTIA Security+).</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="year5"></span> — Bilan
+    </div>
+  </main>
+
+  <script>document.getElementById('year5').textContent = new Date().getFullYear();</script>
+</body>
+</html>
